@@ -6,15 +6,15 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _reactAddons = require('react/addons');
+var _react = require('react');
 
-var _reactAddons2 = _interopRequireDefault(_reactAddons);
+var _react2 = _interopRequireDefault(_react);
 
 var _reactSwipe = require('react-swipe');
 
 var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
 
-var SliderLayout = _reactAddons2['default'].createClass({
+var SliderLayout = _react2['default'].createClass({
   displayName: 'SliderLayout',
 
   getInitialState: function getInitialState() {
@@ -26,7 +26,7 @@ var SliderLayout = _reactAddons2['default'].createClass({
     this.props.callback(index);
   },
   render: function render() {
-    return _reactAddons2['default'].createElement(
+    return _react2['default'].createElement(
       _reactSwipe2['default'],
       { callback: this.props.callback ? this.onSlideChanged : undefined },
       this.props.children
