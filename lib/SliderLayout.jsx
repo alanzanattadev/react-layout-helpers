@@ -1,4 +1,4 @@
-import React from 'react/addons';
+import React from 'react';
 import ReactSwipe from 'react-swipe';
 
 var SliderLayout = React.createClass({
